@@ -5,8 +5,10 @@
     <title>はじめてのjquery</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
-      $(document.body).click(function () {
-        $("div:hidden:first").fadeIn("slow");
+      $(document).ready(function(){
+        $(document.body).click(function () {
+          $("div:hidden:first").fadeIn("slow");
+        });
       });
       $(function(){
         $("#toggle").on("click",function(){
@@ -20,7 +22,7 @@
     <div id="target">表示・非表示される要素</div>
     <button id="toggle">切り替え</button>
     <span>Click here...</span>
-      <div id="one"></div>
+        <div id="one"></div>
         <div id="two"></div>
         <div id="three"></div>
   </body>
